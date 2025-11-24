@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-11-23T16:01:10 IST" name="Default suite" finished-at="2025-11-23T16:02:58 IST" duration-ms="107332">
+    <groups>
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.SubmitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacadamy.Test.SubmitOrderTest@5b1669c0]" name="SubmitOrder" class="rahulshettyacadamy.Test.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2025-11-23T16:01:10 IST" name="Default test" finished-at="2025-11-23T16:02:58 IST" duration-ms="107332">
+      <class name="rahulshettyacadamy.Test.SubmitOrderTest">
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:rahulshettyacadamy.Test.SubmitOrderTest@5b1669c0]" started-at="2025-11-23T16:01:11 IST" name="LaunchApplication" finished-at="2025-11-23T16:01:36 IST" duration-ms="25346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacadamy.Test.SubmitOrderTest@5b1669c0]" started-at="2025-11-23T16:01:36 IST" name="SubmitOrder" data-provider="getData" finished-at="2025-11-23T16:01:58 IST" duration-ms="22042" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Email=raju1245@gmail.com, User=Existing, gender=Male, Username=wedrtyui, Phone=1234567890, Country=United State, LastName=Tho, productName=ADIDAS ORIGINAL, age=18, Occ=Doctor, Password=Suvarna@02}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: #toast-container (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63800}, goog:processID: 15872, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63800/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6eac36288f20b4419fb66fceb8fe4c73]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: #toast-container (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '4.38.0', revision: '6b412e825c*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63800}, goog:processID: 15872, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63800/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6eac36288f20b4419fb66fceb8fe4c73
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at rahulshettyacadamy.abstractComponents.AbstractComponents.waitForElementToAppear(AbstractComponents.java:36)
+at rahulshettyacadamy.PageObjects.ProductCatalogue.AddProductToCart(ProductCatalogue.java:75)
+at rahulshettyacadamy.Test.SubmitOrderTest.SubmitOrder(SubmitOrderTest.java:82)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacadamy.Test.SubmitOrderTest@5b1669c0]" started-at="2025-11-23T16:01:58 IST" name="tearDown" finished-at="2025-11-23T16:01:59 IST" duration-ms="369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="LaunchApplication()[pri:0, instance:rahulshettyacadamy.Test.SubmitOrderTest@5b1669c0]" started-at="2025-11-23T16:01:59 IST" name="LaunchApplication" finished-at="2025-11-23T16:02:35 IST" duration-ms="36009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method signature="SubmitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacadamy.Test.SubmitOrderTest@5b1669c0]" started-at="2025-11-23T16:02:35 IST" name="SubmitOrder" data-provider="getData" finished-at="2025-11-23T16:02:57 IST" duration-ms="22598" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Email=suvarna5@gmail.com, User=Existing, gender=Male, Username=wedrtyui, Phone=1234567890, Country=India, LastName=Tho, productName=ZARA COAT 3, age=18, Occ=Doctor, Password=Suvarna@02}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacadamy.Test.SubmitOrderTest@5b1669c0]" started-at="2025-11-23T16:02:57 IST" name="tearDown" finished-at="2025-11-23T16:02:58 IST" duration-ms="246" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="OrderHistory(java.util.HashMap)[pri:0, instance:rahulshettyacadamy.Test.SubmitOrderTest@5b1669c0]" started-at="2025-11-23T16:02:58 IST" name="OrderHistory" finished-at="2025-11-23T16:02:58 IST" depends-on-methods="rahulshettyacadamy.Test.SubmitOrderTest.SubmitOrder" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method rahulshettyacadamy.Test.SubmitOrderTest.OrderHistory() on instance rahulshettyacadamy.Test.SubmitOrderTest@5b1669c0 depends on not successfully finished methods 
+[rahulshettyacadamy.Test.SubmitOrderTest.SubmitOrder() on instance rahulshettyacadamy.Test.SubmitOrderTest@5b1669c0]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method rahulshettyacadamy.Test.SubmitOrderTest.OrderHistory() on instance rahulshettyacadamy.Test.SubmitOrderTest@5b1669c0 depends on not successfully finished methods 
+[rahulshettyacadamy.Test.SubmitOrderTest.SubmitOrder() on instance rahulshettyacadamy.Test.SubmitOrderTest@5b1669c0]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:156)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderHistory -->
+      </class> <!-- rahulshettyacadamy.Test.SubmitOrderTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
