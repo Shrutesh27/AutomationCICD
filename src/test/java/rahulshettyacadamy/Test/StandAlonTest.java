@@ -21,7 +21,7 @@ public class StandAlonTest {
 	public static void main(String[] args) throws InterruptedException {
 		String productName = "ADIDAS ORIGINAL";
 		String Country = "United State";
-		//new comment added
+		//new comment added newly
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
